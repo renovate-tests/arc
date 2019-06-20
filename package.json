@@ -1,0 +1,32 @@
+{
+  "name": "root",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "authors": [
+    "Christopher Pappas <christopher@artsymail.com>",
+    "Art.sy Inc <it@artsymail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/artsy/arc.git"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2",
+    "husky": "^2.4.1",
+    "pretty-quick": "^1.11.1"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": false,
+    "singleQuote": false,
+    "trailingComma": "es5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}

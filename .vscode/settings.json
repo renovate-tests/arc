@@ -1,0 +1,24 @@
+{
+  "files.exclude": {
+    "**/.rts2_cache_cjs": true,
+    "**/.rts2_cache_esm": true,
+    ".git/": true,
+    "node_modules/": false,
+    "dist/": false
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/public": true
+  },
+  "editor.rulers": [80],
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "[json]": {
+    "editor.formatOnSave": false
+  },
+  "tslint.autoFixOnSave": true,
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "eslint.enable": false,
+  "debug.node.autoAttach": "on"
+}

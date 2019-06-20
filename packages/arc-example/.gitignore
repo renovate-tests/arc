@@ -1,0 +1,17 @@
+coverage
+node_modules
+public
+yarn-error.log
+
+# Env file
+
+# OS X
+.DS_Store
+
+# Temporary files
+.tmp/
+_archive
+
+.babel-cache
+build/*
+__generated__

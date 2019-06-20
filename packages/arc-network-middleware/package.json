@@ -1,0 +1,32 @@
+{
+  "name": "@artsy/arc-network-middleware",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/arc.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --env=jsdom",
+    "type-check": "yarn tsc --noEmit"
+  },
+  "authors": [
+    "Christopher Pappas <christopher@artsymail.com>",
+    "Art.sy Inc <it@artsymail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/artsy/arc.git"
+  },
+  "devDependencies": {
+  },
+  "dependencies": {
+    "react-relay-network-modern": "^4.0.1",
+    "react-relay-network-modern-ssr": "^1.2.3",
+    "relay-runtime": "^5.0.0"
+  }
+}
