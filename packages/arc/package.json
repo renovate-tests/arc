@@ -9,10 +9,15 @@
     "dist"
   ],
   "scripts": {
-    "start": "tsdx watch",
     "build": "tsdx build",
+    "lint": "tslint 'src/**/*.{ts,tsx}' --fix",
+    "precommit": "lint-staged",
+    "start": "tsdx watch",
     "test": "tsdx test --env=jsdom",
     "type-check": "yarn tsc --noEmit"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "peerDependencies": {
     "react": ">=16"

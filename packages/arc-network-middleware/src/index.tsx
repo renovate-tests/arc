@@ -6,10 +6,9 @@ import RelayServerSSR from "react-relay-network-modern-ssr/node8/server"
 import { Environment, RecordSource, Store } from "relay-runtime"
 
 import {
+  cacheMiddleware,
   RelayNetworkLayer,
   urlMiddleware,
-  cacheMiddleware,
-  loggerMiddleware,
 } from "react-relay-network-modern"
 
 export * from "react-relay-network-modern"

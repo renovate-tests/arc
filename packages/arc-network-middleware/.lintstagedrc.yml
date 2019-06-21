@@ -1,0 +1,5 @@
+linters:
+  src/*.{ts,tsx}:
+    - yarn lint
+    - prettier --fix
+    - git add

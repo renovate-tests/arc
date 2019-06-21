@@ -1,5 +1,5 @@
-import { App } from "./App"
 import { graphql } from "react-relay"
+import { App } from "./App"
 
 export const routes = [
   {

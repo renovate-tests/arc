@@ -1,0 +1,14 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "arc"
+    },
+    {
+      "path": "arc-example"
+    },
+    {
+      "path": "arc-network-middleware"
+    }
+  ]
+}

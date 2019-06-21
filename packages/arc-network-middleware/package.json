@@ -9,10 +9,15 @@
     "dist"
   ],
   "scripts": {
-    "start": "tsdx watch",
     "build": "tsdx build",
+    "lint": "tslint 'src/**/*.{ts,tsx}' --fix",
+    "precommit": "lint-staged",
+    "start": "tsdx watch",
     "test": "tsdx test --env=jsdom",
     "type-check": "yarn tsc --noEmit"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "authors": [
     "Christopher Pappas <christopher@artsymail.com>",
@@ -22,8 +27,7 @@
     "type": "git",
     "url": "https://github.com/artsy/arc.git"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "dependencies": {
     "react-relay-network-modern": "^4.0.1",
     "react-relay-network-modern-ssr": "^1.2.3",
