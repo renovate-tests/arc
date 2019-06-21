@@ -13,7 +13,6 @@
     "lint": "tslint 'src/**/*.{ts,tsx}' --fix",
     "precommit": "lint-staged",
     "start": "tsdx watch",
-    "test": "tsdx test --env=jsdom",
     "type-check": "yarn tsc --noEmit"
   },
   "publishConfig": {
