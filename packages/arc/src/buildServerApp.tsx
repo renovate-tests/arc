@@ -118,7 +118,7 @@ export function buildServerApp(config: RouterConfig): Promise<Resolve> {
 
       resolve(result)
     } catch (error) {
-      console.log(error)
+      console.error(error)
       reject(error)
     }
   })

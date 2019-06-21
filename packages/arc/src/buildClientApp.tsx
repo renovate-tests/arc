@@ -1,15 +1,15 @@
-import React from "react"
 import qs from "qs"
+import React from "react"
 import { RouterConfig } from "./RouterConfig"
 
-import { Resolver } from "found-relay"
-import { ScrollManager } from "found-scroll"
-import createInitialFarceRouter from "found/lib/createInitialFarceRouter"
-import createRender from "found/lib/createRender"
 import BrowserProtocol from "farce/lib/BrowserProtocol"
 import createQueryMiddleware from "farce/lib/createQueryMiddleware"
 import HashProtocol from "farce/lib/HashProtocol"
 import MemoryProtocol from "farce/lib/MemoryProtocol"
+import { Resolver } from "found-relay"
+import { ScrollManager } from "found-scroll"
+import createInitialFarceRouter from "found/lib/createInitialFarceRouter"
+import createRender from "found/lib/createRender"
 
 interface Resolve {
   ClientApp: React.ComponentType<any>

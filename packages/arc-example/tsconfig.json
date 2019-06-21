@@ -1,22 +1,7 @@
 {
+  "extends": "../tsconfig.settings.json",
   "include": ["src", "types"],
   "compilerOptions": {
-    "baseUrl": "./",
-    "declaration": true,
-    "esModuleInterop": true,
-    "importHelpers": true,
-    "jsx": "react",
-    "lib": ["dom", "esnext"],
-    "module": "esnext",
-    "moduleResolution": "node",
-    "noImplicitAny": false,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "paths": {
-      "*": ["src/*", "node_modules/*"]
-    },
-    "rootDir": "./",
-    "sourceMap": true,
-    "target": "es5",
+    "skipLibCheck": true
   }
 }

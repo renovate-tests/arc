@@ -18,6 +18,7 @@
     "editor.formatOnSave": false
   },
   "tslint.autoFixOnSave": true,
+  "tslint.enable": true,
   "typescript.tsdk": "./node_modules/typescript/lib",
   "eslint.enable": false,
   "debug.node.autoAttach": "on"

@@ -4,9 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "lint": "tslint 'src/**/*.{ts,tsx}' --fix",
+    "precommit": "lint-staged",
     "relay": "relay-compiler --src ./src --schema data/schema.graphql --language typescript --artifactDirectory ./src/__generated__",
     "start": "concurrently --raw --kill-others 'yarn relay --watch' 'babel-node --extensions '.ts,.tsx,.js,.jsx' src/server.tsx'",
-    "sync-schema": "curl https://raw.githubusercontent.com/artsy/metaphysics/master/_schemaV2.graphql -o data/schema.graphql"
+    "sync-schema": "curl https://raw.githubusercontent.com/artsy/metaphysics/master/_schemaV2.graphql -o data/schema.graphql",
+    "type-check": "yarn tsc --noEmit"
   },
   "dependencies": {
     "@babel/node": "^7.4.5",

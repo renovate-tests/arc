@@ -1,12 +1,12 @@
 require("dotenv").config()
 
 import { buildServerApp } from "@artsy/arc"
+import { createNetwork } from "@artsy/arc-network-middleware"
 import express from "express"
 import webpack from "webpack"
 import webpackDevMiddleware from "webpack-dev-middleware"
 import webpackConfig from "../webpack.config"
 import { routes } from "./routes"
-import { createNetwork } from "@artsy/arc-network-middleware"
 
 const compiler = webpack(webpackConfig)
 const app = express()
@@ -35,7 +35,7 @@ app.get("/", async (req, res) => {
       })
     )
   } catch (error) {
-    console.log(error)
+    console.error(error)
   }
 })
 

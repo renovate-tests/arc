@@ -1,8 +1,8 @@
+import { buildClientApp } from "@artsy/arc"
+import { createNetwork, loggerMiddleware } from "@artsy/arc-network-middleware"
 import React from "react"
 import ReactDOM from "react-dom"
-import { buildClientApp } from "@artsy/arc"
-import { routes } from "routes"
-import { createNetwork, loggerMiddleware } from "@artsy/arc-network-middleware"
+import { routes } from "./routes"
 
 buildClientApp({
   routes,
