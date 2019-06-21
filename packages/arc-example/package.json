@@ -12,6 +12,8 @@
     "type-check": "yarn tsc --noEmit"
   },
   "dependencies": {
+    "@artsy/arc": "^0.1.0",
+    "@artsy/arc-network-middleware": "^0.0.2",
     "@babel/node": "^7.4.5",
     "dotenv": "^8.0.0",
     "express": "^4.17.0",
