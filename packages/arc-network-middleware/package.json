@@ -1,9 +1,9 @@
 {
   "name": "@artsy/arc-network-middleware",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "main": "dist/index.js",
-  "module": "dist/arc.esm.js",
+  "module": "dist/arc-network-middleware.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
@@ -12,6 +12,7 @@
     "build": "tsdx build",
     "lint": "tslint 'src/**/*.{ts,tsx}' --fix",
     "precommit": "lint-staged",
+    "prepublishOnly": "yarn build",
     "start": "tsdx watch",
     "type-check": "yarn tsc --noEmit"
   },
