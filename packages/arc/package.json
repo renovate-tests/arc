@@ -14,7 +14,7 @@
     "precommit": "lint-staged",
     "prepublishOnly": "yarn build",
     "start": "tsdx watch",
-    "test": "tsdx test",
+    "test": "yarn jest",
     "type-check": "yarn tsc --noEmit"
   },
   "publishConfig": {
@@ -44,6 +44,7 @@
     "react-dom": "^16.8.6",
     "react-relay": "^5.0.0",
     "styled-components": "^4.3.1",
+    "ts-jest": "^24.0.2",
     "tsdx": "^0.7.2",
     "tslib": "^1.10.0",
     "typescript": "^3.5.2"
