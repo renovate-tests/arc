@@ -109,11 +109,9 @@ export function buildServerApp(config: RouterConfig): Promise<Resolve> {
       // Only exporting this for testing purposes, don't go around using this
       // elsewhere, we’re serious.
       if (typeof jest !== "undefined") {
-        Object.defineProperty(
-          result,
-          __THOU_SHALT_NOT_FAFF_AROUND_WITH_THIS_HERE_OBJECT_WE_ARE_SERIOUS__,
-          { value: ServerApp }
-        )
+        Object.defineProperty(result, __SERVER_APP_TEST__, {
+          value: ServerApp,
+        })
       }
 
       resolve(result)
@@ -124,5 +122,4 @@ export function buildServerApp(config: RouterConfig): Promise<Resolve> {
   })
 }
 
-export const __THOU_SHALT_NOT_FAFF_AROUND_WITH_THIS_HERE_OBJECT_WE_ARE_SERIOUS__ =
-  typeof jest !== "undefined" ? Symbol() : null
+export const __SERVER_APP_TEST__ = typeof jest !== "undefined" ? Symbol() : null

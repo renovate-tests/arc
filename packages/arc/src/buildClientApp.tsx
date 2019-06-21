@@ -60,7 +60,10 @@ export function buildClientApp(config: RouterConfig): Promise<Resolve> {
         routeConfig: routes,
         resolver,
         render: renderArgs => (
-          <ScrollManager renderArgs={renderArgs}>
+          <ScrollManager
+            renderArgs={renderArgs}
+            relayEnvironment={relayEnvironment}
+          >
             {render(renderArgs)}
           </ScrollManager>
         ),

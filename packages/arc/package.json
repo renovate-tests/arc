@@ -12,12 +12,18 @@
     "build": "tsdx build",
     "lint": "tslint 'src/**/*.{ts,tsx}' --fix",
     "precommit": "lint-staged",
+    "prepublishOnly": "yarn build",
     "start": "tsdx watch",
-    "test": "tsdx test --env=jsdom",
+    "test": "yarn jest",
     "type-check": "yarn tsc --noEmit"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest.setup.ts"
+    ]
   },
   "peerDependencies": {
     "react": ">=16"
@@ -29,6 +35,8 @@
     "@types/react-dom": "^16.8.4",
     "@types/serialize-javascript": "^1.5.0",
     "@types/styled-components": "^4.1.16",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
     "husky": "^2.4.1",
     "prettier": "^1.18.2",
     "pretty-quick": "^1.11.1",
@@ -36,6 +44,7 @@
     "react-dom": "^16.8.6",
     "react-relay": "^5.0.0",
     "styled-components": "^4.3.1",
+    "ts-jest": "^24.0.2",
     "tsdx": "^0.7.2",
     "tslib": "^1.10.0",
     "typescript": "^3.5.2"
